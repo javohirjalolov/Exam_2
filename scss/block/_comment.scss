@@ -1,34 +1,64 @@
 .comment {
-
+  
   // .comment__container
-
+  
   &__container {
-    margin-bottom: 200px;
+    margin-bottom: 400px;
   }
-
+  
   // .comment__list
-
-  &__list {
-  }
-
+  
+  
   // .comment__item
-
+  
   &__item {
     display: flex;
     align-items: center;
     gap: 220px;
     margin-bottom: 160px;
+
+    &:nth-child(2n){
+      .comment__images{
+        order: -1;
+
+        &::before{
+          transform: translateX(calc(-100% - 64px));
+        }
+        
+        &::after{
+          bottom: 70%;
+          left: -110%;
+          transform: scalex(-1);
+        }
+      }
+    }
+
+    &:nth-child(3){
+      .comment__images{
+        order: 1;
+
+        &::before{
+          transform: translateX(calc(100% + 64px));
+        }
+        
+        &::after{
+          bottom: 55%;
+          left: 53%;
+          transform: scalex(1);
+        }
+      }
+    }
   }
-
+  
   // .comment__wrapper
-
+  
   &__wrapper {
     max-width: 445px;
     width: 100%;
   }
-
+  
   // .comment__heading
-
+  
   &__heading {
     font-family: 'Space Mono';
     font-style: normal;
@@ -39,9 +69,9 @@
     color: $dark_navy;  
     margin-bottom: 24px;
   }
-
+  
   // .comment__text
-
+  
   &__text {
     font-family: 'Lexend Deca';
     font-style: normal;
@@ -51,20 +81,315 @@
     color: $dim_grey;
     margin-bottom: 40px;  
   }
-
-  &__img{
-
+  
+  &__images{
+    position: relative;
+    
+    &::before{
+      content: "";
+      display: inline-block;
+      width: 445px;
+      height: 445px;
+      background-color:$light_grey;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(calc(100% + 64px));
+      overflow: hidden;
+    }
+    
+    &::after{
+      content: "";
+      display: inline-block;
+      width: 734px;
+      height: 138px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translateX(-131px);
+      background-image: url("./../images/dumaloqlaga_strelka.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
   }
-
+  
   &__imgs{
     border-radius: 50%;
   }
 }
-.visually-hidden {
+
+
+@media only screen and (max-width: 1024px){
+  .comment {
+  
+    // .comment__container
+    
+    &__container {
+      margin-bottom: 104px;
+    }
+    
+    // .comment__list
+    
+    
+    // .comment__item
+    
+    &__item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 56px;
+      margin-bottom: 128px;
+
+      &:nth-child(1){
+        .comment__images{
+          order: -1;
+        }
+      }
+  
+      &:nth-child(2n){
+        .comment__images{
+          order: -1;
+  
+          &::before{
+            transform: translateX(calc(-100% - 64px));
+          }
+          
+          &::after{
+            bottom: 70%;
+            left: -110%;
+            transform: scalex(-1);
+          }
+        }
+      }
+  
+      &:nth-child(3){
+        .comment__images{
+          order: -1;
+  
+          &::before{
+            transform: translateX(calc(100% + 64px));
+          }
+          
+          &::after{
+            bottom: 55%;
+            left: 53%;
+            transform: scalex(1);
+          }
+        }
+      }
+    }
+    
+    // .comment__wrapper
+    
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      max-width: 573px;
+      width: 100%;
+    }
+    
+    // .comment__heading
+    
+    &__heading {
+      font-family: 'Space Mono';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -2.14286px;
+      color: $dark_navy;  
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    // .comment__text
+    
+    &__text {
+      font-family: 'Lexend Deca';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      color: $dim_grey;
+      margin-bottom: 40px;  
+      text-align: center;
+    }
+    
+    &__images{
+      position: relative;
+      
+      &::before{
+        content: "";
+        display: inline-block;
+        width: 445px;
+        height: 445px;
+        background-color:$light_grey;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(calc(100% + 64px));
+        overflow: hidden;
+      }
+      
+      &::after{
+        content: "";
+        display: inline-block;
+        width: 734px;
+        height: 138px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateX(-131px);
+        background-image: url("./../images/dumaloqlaga_strelka.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+    
+    &__imgs{
+      border-radius: 50%;
+    }
+  }
 }
-.container {
-}
-.button {
-}
-.images {
+
+@media only screen and (max-width: 600px){
+  .comment {
+  
+    // .comment__container
+    
+    &__container {
+      margin-bottom: 120px;
+    }
+    
+    // .comment__list
+    
+    
+    // .comment__item
+    
+    &__item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 56px;
+      margin-bottom: 120px;
+
+      &:nth-child(1){
+        .comment__images{
+          order: -1;
+        }
+      }
+  
+      &:nth-child(2n){
+        .comment__images{
+          order: -1;
+  
+          &::before{
+            transform: translateX(calc(-100% - 64px));
+          }
+          
+          &::after{
+            bottom: 70%;
+            left: -110%;
+            transform: scalex(-1);
+          }
+        }
+      }
+  
+      &:nth-child(3){
+        .comment__images{
+          order: -1;
+  
+          &::before{
+            transform: translateX(calc(100% + 64px));
+          }
+          
+          &::after{
+            bottom: 55%;
+            left: 53%;
+            transform: scalex(1);
+          }
+        }
+      }
+    }
+
+    &__item:nth-child(1) .comment__images::after{
+      top: 55%;
+      left: 33%;
+    }
+    &__item:nth-child(2) .comment__images::after{
+      top: 2%;
+      left: -156%;
+    }
+    &__item:nth-child(3) .comment__images::after{
+      top: 0%;
+      left: 33%;
+    }
+    
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      max-width: 311px;
+      width: 100%;
+    }
+    
+    // .comment__heading
+    
+    &__heading {
+      font-family: 'Space Mono';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: -2.14286px;
+      color: $dark_navy;  
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    
+    // .comment__text
+    
+    &__text {
+      font-family: 'Lexend Deca';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      color: $dim_grey;
+      margin-bottom: 32px;  
+      text-align: center;
+    }
+    
+    &__images{
+      position: relative;
+      
+      &::before{
+        display: inline-block;
+      }
+      
+      &::after{
+        content: "";
+        display: inline-block;
+        width: 734px;
+        height: 138px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateX(-131px);
+        background-image: url("./../images/dumaloqlaga_strelka.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+    
+    &__imgs{
+      border-radius: 50%;
+    }
+  }
 }

@@ -1,0 +1,288 @@
+.sign {
+
+  // .sign__container
+  background-color: $dark_navy;
+  background-image: url(./../../images/kalso.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100%);
+  transform: translateY( -100%);
+
+  
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 102px;
+    padding-bottom: 102px;
+  }
+
+  // .sign__left
+
+  &__left {
+    max-width: 415px;
+    width: 100%;
+  }
+
+  // .sign__heading
+
+  &__heading {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: white;  
+  }
+
+  // .sign__right
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  &__link{
+    min-width: 159px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: $snow;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 12px;
+  }
+
+  // .sign__image
+
+  &__image {
+  }
+
+  // .sign__wrapper
+
+  &__wrapper {
+  }
+
+  // .sign__wrapper-text
+
+  &__wrapper-text {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: -0.446429px;
+    color: #495567;  
+  }
+
+  // .sign__wrapper-heading
+
+  &__wrapper-heading {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.892857px;
+    color: #495567;  
+  }
+}
+
+
+@media only screen and (max-width: 1024px){
+  .sign {
+
+    // .sign__container
+    margin-top: 500px;
+    background-color: $dark_navy;
+    background-image: url(./../../images/kalso.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100%);
+    transform: translateY( -100%);
+  
+    
+    &__container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 62px;
+      padding-bottom: 62px;
+    }
+  
+    // .sign__left
+  
+    &__left {
+      max-width: 457px;
+      width: 100%;
+    }
+  
+    // .sign__heading
+  
+    &__heading {
+      font-family: 'Space Mono';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -2.14286px;
+      color: white;  
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  
+    // .sign__right
+  
+    &__right {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+  
+    &__link{
+      min-width: 159px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      background-color: $snow;
+      padding: 10px;
+      border-radius: 5px;
+      gap: 12px;
+    }
+  
+    // .sign__image
+  
+    &__image {
+    }
+  
+    // .sign__wrapper
+  
+    &__wrapper {
+    }
+  
+    // .sign__wrapper-text
+  
+    &__wrapper-text {
+      font-family: 'Space Mono';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 10px;
+      line-height: 15px;
+      letter-spacing: -0.446429px;
+      color: #495567;  
+    }
+  
+    // .sign__wrapper-heading
+  
+    &__wrapper-heading {
+      font-family: 'Space Mono';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: -0.892857px;
+      color: #495567;  
+    }
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .sign {
+
+    // .sign__container
+    margin-top: 500px;
+    background-color: $dark_navy;
+    background-image: url(./../../images/kalso.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100%);
+    transform: translateY( -100%);
+  
+    
+    &__container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 62px;
+      padding-bottom: 62px;
+    }
+  
+    // .sign__left
+  
+    &__left {
+      max-width: 311px;
+      width: 100%;
+    }
+  
+    // .sign__heading
+  
+    &__heading {
+      font-family: 'Space Mono';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: -2.14286px;
+      color: white;  
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  
+    // .sign__right
+  
+    &__right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    &__link{
+      min-width: 159px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      background-color: $snow;
+      padding: 100px;
+      border-radius: 5px;
+      gap: 12px;
+    }
+  
+    // .sign__image
+  
+    &__image {
+    }
+  
+    // .sign__wrapper
+  
+    &__wrapper {
+    }
+  
+    // .sign__wrapper-text
+  
+    &__wrapper-text {
+      font-family: 'Space Mono';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 10px;
+      line-height: 15px;
+      letter-spacing: -0.446429px;
+      color: #495567;  
+    }
+  
+    // .sign__wrapper-heading
+  
+    &__wrapper-heading {
+      font-family: 'Space Mono';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: -0.892857px;
+      color: #495567;  
+    }
+  }
+}
