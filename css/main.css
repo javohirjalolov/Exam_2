@@ -1052,4 +1052,49 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: center;
   }
 }
+
+.comment__container {
+  margin-bottom: 200px;
+}
+
+.comment__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 220px;
+  margin-bottom: 160px;
+}
+
+.comment__wrapper {
+  max-width: 445px;
+  width: 100%;
+}
+
+.comment__heading {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+  margin-bottom: 24px;
+}
+
+.comment__text {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  margin-bottom: 40px;
+}
+
+.comment__imgs {
+  border-radius: 50%;
+}
 /*# sourceMappingURL=main.css.map */

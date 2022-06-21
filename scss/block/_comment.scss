@@ -1,0 +1,70 @@
+.comment {
+
+  // .comment__container
+
+  &__container {
+    margin-bottom: 200px;
+  }
+
+  // .comment__list
+
+  &__list {
+  }
+
+  // .comment__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 220px;
+    margin-bottom: 160px;
+  }
+
+  // .comment__wrapper
+
+  &__wrapper {
+    max-width: 445px;
+    width: 100%;
+  }
+
+  // .comment__heading
+
+  &__heading {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: $dark_navy;  
+    margin-bottom: 24px;
+  }
+
+  // .comment__text
+
+  &__text {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: $dim_grey;
+    margin-bottom: 40px;  
+  }
+
+  &__img{
+
+  }
+
+  &__imgs{
+    border-radius: 50%;
+  }
+}
+.visually-hidden {
+}
+.container {
+}
+.button {
+}
+.images {
+}
