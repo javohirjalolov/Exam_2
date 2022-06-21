@@ -1,0 +1,161 @@
+.header {
+  
+  // .header__container
+  
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-bottom: 21px;
+  }
+  
+  // .header__burger
+  
+  &__burger {
+    display: none;
+    background: none;
+    border: none;
+  }
+  
+  
+  &__logo-img {
+    max-width: 108px;
+    width: 100%;
+  }
+  
+  // .header__wrapper
+  
+  &__wrapper {
+    max-width: 940px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  
+  
+  // .header__item-link
+  
+  &__item-link {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: $dim_grey;  
+    text-decoration: none;
+  }
+}
+.button {
+  @include btn;
+  &:hover{
+    background: #F2F2F2;
+    color: $yellow;
+    box-shadow:inset 0px 0px 0px 3px $yellow;
+  }
+}
+
+@media only screen and (max-width: 1150px){
+  .header {
+    // .header__logo
+    
+    // .header__wrapper
+    
+    &__wrapper {
+      max-width: 522px;
+      width: 100%;
+    }
+    
+  }
+} 
+
+@media only screen and (max-width: 600px){
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    
+    // .header__container
+    
+
+    &__container-active{
+
+      .header__wrapper{
+        position: absolute;
+        display: inline-block;
+      }
+
+      .header__burger{
+        display: inline-block;
+      }
+
+      .header__open-burger{
+        display: none;
+      }
+
+      .header__close-burger{
+        display: inline-block;
+      }
+
+    }
+    
+    
+    &__burger {
+      display: inline-block;
+    }
+
+    &__close-burger{
+      display: none;
+    }
+
+    
+    
+    &__logo {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__logo-img{
+      max-width: 76px;
+    }
+    
+    
+    &__wrapper {
+      position: absolute;
+      display: none;
+      background-color: #333A44;
+      top: 100%;
+      left: 0;
+      width: calc(100vw - 119px);
+      height: calc(100vh);
+      padding: 64px 32px 24px 32px;
+    }
+
+    &__list{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__list-item{
+      gap: 24px;
+    }
+
+  }
+  
+}
+
+main{
+  padding-top: 64px;
+}
