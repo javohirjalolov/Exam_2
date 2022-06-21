@@ -53,6 +53,14 @@
     line-height: 25px;
     color: $dim_grey;  
     text-decoration: none;
+
+    &:hover{
+      color: $yellow;
+    }
+
+    &:active{
+      opacity: 0.8;
+    }
   }
 }
 .button {
@@ -154,8 +162,7 @@
 
   }
   
-}
-
-main{
-  padding-top: 64px;
+  main{
+    padding-top: 64px;
+  }
 }

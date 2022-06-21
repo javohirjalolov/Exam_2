@@ -1,0 +1,280 @@
+.services {
+  
+  // .services__container
+  
+  &__container {
+    margin-bottom: 200px;
+  }
+  
+  // .services__list
+  
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  
+  // .services__item
+  
+  &__item {
+    max-width: 350px;
+    width: 100%;
+  }
+  
+  &__box{
+    margin-right: 30px;
+  }
+  
+  // .services__sircle
+  
+  &__sircle {
+    position: relative;
+    margin-bottom: 40px;
+    
+    
+    &::before{
+      content:"";
+      display: inline-block;
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background-color: $yellow;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    
+    &::after{
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 100%;
+      height: 20px;
+      top: 50%;
+      left: -260px;transform: translateY(-50%);
+      border: 10px solid #E5ECF4;
+      z-index: -1;
+    }
+  }
+
+  &__item:nth-child(1) .services__sircle::before{
+    background-image: url(./../images/Telefon.svg);
+  }
+
+  &__item:nth-child(2) .services__sircle::before{
+    background-image: url(./../images/skutr.svg);
+  }
+
+  &__item:nth-child(3) .services__sircle::before{
+    background-image: url(./../images/matsekl.svg);
+  }
+
+  
+  
+  // .services__heading
+  
+  &__heading {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: $dark_navy;
+    margin-bottom: 27px;  
+  }
+  
+  // .services__text
+  
+  &__text {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: $dim_grey;  
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .services {
+  
+    // .services__container
+    
+    &__container {
+      margin-bottom: 145px;
+    }
+    
+    // .services__list
+    
+    &__list {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    // .services__item
+    
+    &__item {
+      display: flex;
+      max-width: 573px;
+      width: 100%;
+    }
+    
+    &__box{
+      margin-right: 0px;
+      margin-bottom: 40px;
+      margin-left: 79px;
+    }
+    
+    // .services__sircle
+    
+    &__sircle {
+      position: relative;
+      margin-bottom: 0px;
+      
+      &::after{
+        width: 133%;
+        height: 20px;
+        top: -70px;
+        left: -18px;
+        transform: rotate(90deg);
+      }
+    }
+  
+    &__item:nth-child(1) .services__sircle::before{
+      background-image: url(./../images/Telefon.svg);
+    }
+  
+    &__item:nth-child(2) .services__sircle::before{
+      background-image: url(./../images/skutr.svg);
+    }
+  
+    &__item:nth-child(3) .services__sircle::before{
+      background-image: url(./../images/matsekl.svg);
+    }
+  
+    
+    
+    // .services__heading
+    
+    &__heading {
+      font-family: 'Space Mono';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -1.07143px;
+      color: $dark_navy;
+      margin-bottom: 27px;  
+    }
+    
+    // .services__text
+    
+    &__text {
+      font-family: 'Lexend Deca';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      color: $dim_grey;  
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px){
+  .services {
+  
+    // .services__container
+    
+    &__container {
+      margin-bottom: 120px;
+    }
+    
+    // .services__list
+    
+    &__list {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    // .services__item
+    
+    &__item {
+      max-width: 311px;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    &__box{
+      margin-bottom: 48px;
+      margin-left: 0;
+      align-items: center;
+    }
+    
+    // .services__sircle
+    
+    &__sircle {
+      position: relative;
+      margin-bottom: 24px;
+      
+      
+      &::before{
+        content:"";
+        display: inline-block;
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        background-color: $yellow;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      
+      &::after{
+        display: none;
+      }
+    }
+  
+    &__item:nth-child(1) .services__sircle::before{
+      background-image: url(./../images/Telefon.svg);
+    }
+  
+    &__item:nth-child(2) .services__sircle::before{
+      background-image: url(./../images/skutr.svg);
+    }
+  
+    &__item:nth-child(3) .services__sircle::before{
+      background-image: url(./../images/matsekl.svg);
+    }
+  
+    
+    
+    // .services__heading
+    
+    &__heading {
+      font-family: 'Space Mono';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: -1.07143px;
+      color: $dark_navy;
+      margin-bottom: 24px;  
+      text-align: center;
+    }
+    
+    // .services__text
+    
+    &__text {
+      font-family: 'Lexend Deca';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      color: $dim_grey;  
+      text-align: center;
+    }
+  }
+}
+
